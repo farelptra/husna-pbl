@@ -41,14 +41,14 @@ with st.form("prediction_form"):
     with col1:
         st.markdown("#### 🧑‍⚕️ Profil & Gaya Hidup")
         age = st.number_input("Usia (Tahun)", min_value=1, max_value=120, value=45)
-        bmi = st.number_input("BMI (Body Mass Index)", min_value=10.0, max_value=60.0, value=25.0, step=0.1)
+        bmi = st.number_input("BMI (Body Mass Index)", min_value=0.0, max_value=60.0, value=25.0, step=0.1)
         physical_activity = st.number_input("Aktivitas Fisik (Menit/Minggu)", min_value=0, max_value=1000, value=150)
         
     with col2:
         st.markdown("#### 🩸 Metrik Medis / Hasil Laboratorium")
-        hba1c = st.number_input("HbA1c Level (%)", min_value=3.0, max_value=15.0, value=5.5, step=0.1)
-        glucose_fasting = st.number_input("Gula Darah Puasa (mg/dL)", min_value=50.0, max_value=300.0, value=100.0, step=1.0)
-        glucose_post = st.number_input("Gula Darah Pasca Makan / 2 Jam PP (mg/dL)", min_value=50.0, max_value=400.0, value=140.0, step=1.0)
+        hba1c = st.number_input("HbA1c Level (%)", min_value=0.0, max_value=15.0, value=5.5, step=0.1)
+        glucose_fasting = st.number_input("Gula Darah Puasa (mg/dL)", min_value=0.0, max_value=300.0, value=100.0, step=1.0)
+        glucose_post = st.number_input("Gula Darah Pasca Makan / 2 Jam PP (mg/dL)", min_value=0.0, max_value=400.0, value=140.0, step=1.0)
         triglycerides = st.number_input("Trigliserida (mg/dL)", min_value=0.0, max_value=500.0, value=150.0, step=1.0)
         insulin = st.number_input("Kadar Insulin (μIU/mL)", min_value=0.0, max_value=300.0, value=10.0, step=1.0)
 
