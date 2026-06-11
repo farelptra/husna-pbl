@@ -49,7 +49,7 @@ with st.form("prediction_form"):
         hba1c = st.number_input("HbA1c Level (%)", min_value=3.0, max_value=15.0, value=5.5, step=0.1)
         glucose_fasting = st.number_input("Gula Darah Puasa (mg/dL)", min_value=50.0, max_value=300.0, value=100.0, step=1.0)
         glucose_post = st.number_input("Gula Darah Pasca Makan / 2 Jam PP (mg/dL)", min_value=50.0, max_value=400.0, value=140.0, step=1.0)
-        triglycerides = st.number_input("Trigliserida (mg/dL)", min_value=50.0, max_value=500.0, value=150.0, step=1.0)
+        triglycerides = st.number_input("Trigliserida (mg/dL)", min_value=0.0, max_value=500.0, value=150.0, step=1.0)
         insulin = st.number_input("Kadar Insulin (μIU/mL)", min_value=0.0, max_value=300.0, value=10.0, step=1.0)
 
     st.markdown("<br>", unsafe_allow_html=True)
